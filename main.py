@@ -1,8 +1,5 @@
-def factorial(n):
-  if(n==0  or n==1):
-    return 1
-  else:
-    return n *factorial(n-1)
-num=5
-result=factorial(num)
-print("Factorial of {} is {}. ".format(num,result))
+def fact(n):  
+    return 1 if (n==1 or n==0) else n * fact(n - 1);  
+  
+num = 5  
+print("Factorial of",num,"is",fact(num))
